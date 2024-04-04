@@ -8,6 +8,7 @@ public class Test {
     public void saveContact()
     {
         insert con;
+        //hello
         con = new Contact();
         //JAI SHREE RAM
     }
