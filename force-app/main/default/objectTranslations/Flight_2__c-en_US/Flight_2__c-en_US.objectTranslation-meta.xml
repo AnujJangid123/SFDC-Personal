@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Flight 2</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Flights 2</value>
+    </caseValues>
+    <layouts>
+        <layout>Flight 2 Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Neu_task</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Pilot_Task</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Arrival_date_cant_be_earlier</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Arrival_time_cant_be_earlier</name>
+    </validationRules>
+    <workflowTasks>
+        <name>Ready_for_take_off</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<apex:page controller="Test" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock >
+            First Name: <apex:inputField value="{!con.FirstName}"/><br/><br/>
+            Last Name: <apex:inputField value="{!con.LastName}"/><br/>
+            Phone: <apex:inputField value="{!con.Phone}"/><br/><br/>
+            Email: <apex:inputField value="{!con.Email}"/><br/><br/>
+            <apex:commandButton action="{!saveContact}" value="Save"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

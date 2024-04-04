@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <layouts>
+        <layout>Business Class Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Economy Class Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Business_Class</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Economy_Class</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>food_preferences</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>food_when_fare_is_greater_than_5000</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ticket_price_should_be_less_than_20k</name>
+    </validationRules>
+</CustomObjectTranslation>

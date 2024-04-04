@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Airport management app</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Airport Management</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Flight__c</tabs>
+    <tabs>Ticket__c</tabs>
+    <tabs>Passenger__c</tabs>
+    <tabs>Pilot__c</tabs>
+    <tabs>Boarding_Pass__c</tabs>
+    <tabs>Cabin_Crew__c</tabs>
+    <tabs>Airplane__c</tabs>
+    <tabs>Airline__c</tabs>
+    <tabs>School_Year__c</tabs>
+    <tabs>Campus__c</tabs>
+    <tabs>Grade__c</tabs>
+    <tabs>Program__c</tabs>
+    <tabs>Offeringg__c</tabs>
+    <tabs>A__c</tabs>
+    <tabs>B__c</tabs>
+    <tabs>C__c</tabs>
+    <tabs>POD_Group__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Airport_Management_UtilityBar</utilityBar>
+</CustomApplication>

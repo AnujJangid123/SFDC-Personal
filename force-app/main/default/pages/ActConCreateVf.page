@@ -1,0 +1,30 @@
+<apex:page controller="ActConCreateVfCtrl" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock >
+           First Name: <apex:inputField value="{!con.FirstName}"/><br/><br/>
+          Last Name: <apex:inputField value="{!con.LastName}"/><br/>
+            Phone: <apex:inputField value="{!con.Phone}"/><br/><br/>
+            Email: <apex:inputField value="{!con.Email}"/><br/><br/>
+            <apex:commandButton action="{!saveValues}" value="Save"/>
+            
+            <table border="1px">
+               <tr>
+                   <th>Type</th>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Phone</th>
+                   <th>Email</th>
+               </tr>                    
+               <apex:repeat value="{!con}" var="a" >
+                   <tr>
+                       <th>Contact</th>
+                       <td><apex:outputField value="{! a.FirstName}"/></td>
+                       <td><apex:outputField value="{! a.LastName}"/></td>
+                       <td><apex:outputField value="{! a.Phone}"/></td>
+                       <td><apex:outputField value="{! a.Email}"/></td>
+                   </tr>                   
+               </apex:repeat>
+        	</table>
+       	</apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Totoal_No_of_ratings__c</fullName>
+    <externalId>false</externalId>
+    <label>Totoal No. of ratings</label>
+    <summaryForeignKey>Rating__c.Rating_given_to_which_student__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

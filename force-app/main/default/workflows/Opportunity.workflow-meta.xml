@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_opportunity_page</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal/Price Quote</literalValue>
+        <name>Update opportunity page</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_stage_to_need_analysis</fullName>
+        <field>StageName</field>
+        <literalValue>Needs Analysis</literalValue>
+        <name>Update stage to need analysis</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_stage_to_lost</fullName>
+        <field>StageName</field>
+        <literalValue>Closed Lost</literalValue>
+        <name>update stage to lost</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>If amount greater than 50k change status</fullName>
+        <actions>
+            <name>Update_stage_to_need_analysis</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterThan</operation>
+            <value>50000</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Need_Work_on_hot_opportunity</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Need_Work_on_hot_opportunity</fullName>
+        <assignedTo>anujjangid3019@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please work on this bcoz this is a  high opportunity</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>Need Work on hot opportunity</subject>
+    </tasks>
+</Workflow>

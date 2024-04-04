@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>Opportunity_Field_Set</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Uneditable_If_Won_Closed</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>DeliveryStatus</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <workflowTasks>
+        <description></description>
+        <name>Need_Work_on_hot_opportunity</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Airplane</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Airplanes</value>
+    </caseValues>
+    <layouts>
+        <layout>Airbus Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Boeing Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Charter Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Airbus</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Boeing</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Charter</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

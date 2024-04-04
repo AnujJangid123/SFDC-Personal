@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>departure_time_is_less_than_hour</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(TIMENOW()  -  TIMEVALUE(
+ Flight_ID__r.Departure_Time__c )  &lt; 3600000,Has_Boarded__c  ==False,false)</errorConditionFormula>
+    <errorMessage>Departure time is less than an hour</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<apex:page controller="demoStaticClass" docType="html-5.0" >
+    <apex:form >
+    	<apex:pageBlock >
+           First Name <span></span> &nbsp; <apex:input type="text" title="Person Name" value="{!personName}" /><br/><br/>
+           Enter First Digit<span></span> &nbsp;  <apex:input type="number" title="Enter First Digit" value="{!intValue}" /><br/><br/>
+           Enter Second Digit <span></span> &nbsp; <apex:input type="number" title="Enter Second Digit" value="{!jValue}" /><br/><br/>
+            <apex:pageBlockButtons location="top">
+            	<apex:commandButton value="Add Values" action="{!sumMethod}" />
+                <apex:commandButton value="Div Values" action="{!divMethod}" />
+                <apex:commandButton value="Mul Values" action="{!mulMethod}" />
+                <apex:commandButton value="Sub Values" action="{!subMethod}" />
+            </apex:pageBlockButtons>
+            
+            
+            <apex:outputPanel rendered="{!IF(finalValue != 0 , TRUE, FALSE)}">
+                <h1>
+                    The Final VALUE is----> {!finalValue}
+                </h1>
+                <apex:repeat value="{!lstAcc}" var="acc">
+                    Name  {!acc.Name}<br/>
+                    Phone  {!acc.Phone}<br/>
+                    ======================<br/>
+                </apex:repeat>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

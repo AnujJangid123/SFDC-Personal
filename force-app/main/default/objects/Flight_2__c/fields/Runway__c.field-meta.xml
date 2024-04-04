@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Runway__c</fullName>
+    <externalId>false</externalId>
+    <label>Runway</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Short Runway</fullName>
+                <default>false</default>
+                <label>Short Runway</label>
+            </value>
+            <value>
+                <fullName>Long Runway</fullName>
+                <default>false</default>
+                <label>Long Runway</label>
+            </value>
+            <value>
+                <fullName>Medium Runway</fullName>
+                <default>false</default>
+                <label>Medium Runway</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

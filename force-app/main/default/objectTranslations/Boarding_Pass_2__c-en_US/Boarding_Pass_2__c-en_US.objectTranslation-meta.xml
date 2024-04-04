@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Boarding Pass 2</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Boarding Passes 2</value>
+    </caseValues>
+    <layouts>
+        <layout>Boarding Pass 2 Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Meal_when_food_is_not_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>departure_time_is_less_than_hour</name>
+    </validationRules>
+</CustomObjectTranslation>

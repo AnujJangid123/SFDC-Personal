@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fare_greater_than_5000</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Fare__c</field>
+        <operation>greaterThan</operation>
+        <value>5000</value>
+    </filters>
+    <label>Fare greater than 5000</label>
+</ListView>

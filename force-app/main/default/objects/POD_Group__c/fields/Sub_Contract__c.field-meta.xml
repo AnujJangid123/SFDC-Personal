@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Contract__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Contract</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Contract_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Thermometer</fullName>
+                <default>false</default>
+                <label>Thermometer</label>
+            </value>
+            <value>
+                <fullName>X Ray</fullName>
+                <default>false</default>
+                <label>X Ray</label>
+            </value>
+            <value>
+                <fullName>Trucks</fullName>
+                <default>false</default>
+                <label>Trucks</label>
+            </value>
+            <value>
+                <fullName>Builders</fullName>
+                <default>false</default>
+                <label>Builders</label>
+            </value>
+            <value>
+                <fullName>PCs</fullName>
+                <default>false</default>
+                <label>PCs</label>
+            </value>
+            <value>
+                <fullName>Printers</fullName>
+                <default>false</default>
+                <label>Printers</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>POD Gov</controllingFieldValue>
+            <valueName>Trucks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Gov</controllingFieldValue>
+            <valueName>Builders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Regular</controllingFieldValue>
+            <valueName>PCs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Regular</controllingFieldValue>
+            <valueName>Printers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Medical</controllingFieldValue>
+            <valueName>Thermometer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Medical</controllingFieldValue>
+            <valueName>X Ray</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

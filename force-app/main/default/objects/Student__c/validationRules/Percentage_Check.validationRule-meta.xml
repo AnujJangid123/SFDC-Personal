@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percentage_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>X12th_Percentage__c  &lt; 0.60</errorConditionFormula>
+    <errorDisplayField>X12th_Percentage__c</errorDisplayField>
+    <errorMessage>Percentage below 60%. You are not eligible for registration</errorMessage>
+</ValidationRule>

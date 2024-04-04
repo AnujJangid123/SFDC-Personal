@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meal_when_food_is_not_empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>Meal__c ==true &amp;&amp;  ISBLANK( Ticket_ID__r.Food_Preferences__c )</errorConditionFormula>
+    <errorMessage>Passenger has food preferences, please enter it.</errorMessage>
+</ValidationRule>

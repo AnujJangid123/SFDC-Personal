@@ -1,0 +1,6 @@
+<apex:page standardController="Pilot__c">
+    <h1>
+        This is vf.
+        
+    </h1>
+</apex:page>

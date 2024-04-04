@@ -1,0 +1,50 @@
+<apex:page controller="ExtractSobject">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockButtons location="bottom" >
+                        <apex:outputPanel id="myButtons">
+
+                                <apex:commandButton action="{!Beginning}" title="Beginning" value="<<" disabled="{!disablePrevious}" reRender="j_id0:j_id1:j_id2:j_id8:values,myButtons"/>
+                                <apex:commandButton action="{!Previous}" title="Previous" value="<" disabled="{!disablePrevious}" reRender="j_id0:j_id1:j_id2:j_id8:values,myButtons"/>        
+                                <apex:commandButton action="{!Next}" title="Next" value=">" disabled="{!disableNext}" reRender="j_id0:j_id1:j_id2:j_id8:values,myButtons"/>
+                                <apex:commandButton action="{!End}" title="End" value=">>" disabled="{!disableNext}" reRender="j_id0:j_id1:j_id2:j_id8:values,myButtons"/>        
+                            
+                        </apex:outputPanel>
+                    </apex:pageBlockButtons>
+            <apex:pageblocksection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputlabel value="Select Object"/>
+                    <apex:selectList value="{!Selectedobject }" size="1">
+                        <apex:selectoptions value="{!Selectedobjnames}"></apex:selectoptions>
+                        <apex:actionSupport event="onchange" rerender="a"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel id="a">
+                        <apex:outputLabel value="Object FieldSets" ></apex:outputLabel>
+                        <apex:selectList value="{!fieldSetObj }" size="1">
+                            <apex:selectoptions value="{!SelectedobjFields}"></apex:selectoptions>
+                            <apex:actionSupport event="onchange" reRender="values,myButtons" action="{!fetchObjectRecordValues}"/>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:outputPanel id="values">
+                    ===========
+                    
+                    <apex:pageBlockSection title="Object list" collapsible="false">
+                        <apex:pageBlockTable value="{!objectRecordList}" var="REC">
+                            <apex:repeat value="{!lstOfFields}" var="fieldValue">
+                                <apex:column value="{!REC[fieldValue]}">
+                                </apex:column>
+                            </apex:repeat>
+                        </apex:pageBlockTable>
+                    </apex:pageBlockSection>
+                </apex:outputPanel>
+                
+            </apex:pageblocksection>
+            
+        </apex:pageblock>
+    </apex:form>
+    
+</apex:page>

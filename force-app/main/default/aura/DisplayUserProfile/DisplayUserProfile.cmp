@@ -1,0 +1,35 @@
+<!-- userListComponent.cmp -->
+<aura:component controller="UserController">
+    <aura:attribute name="users" type="List" />
+    <aura:attribute name="selectedProfile" type="String" default="" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <table>
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Current Profile</th>
+                <th>New Profile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.users}" var="user">
+                <tr>
+                    <td>{!user.Name}</td>
+                    <td>{!user.Profile.Name}</td>
+                    <td>
+                        <lightning:select name="{!user.Id}" value="{!user.ProfileId}" onchange="{!c.updateProfile}">
+                            <option value="">--None--</option>
+                            <aura:iteration items="{!v.profiles}" var="profile">
+                                <option value="{!profile.Id}" selected="{!user.ProfileId == profile.Id}">{!profile.Name}</option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+    <lightning:button label="Save Changes" variant="brand" onclick="{!c.saveChanges}" />
+</aura:component>

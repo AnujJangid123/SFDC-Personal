@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>karankeswani100@gmail.com</contactEmail>
+    <label>Salesforce Connected App</label>
+    <oauthConfig>
+        <callbackUrl>https://anujj110-dev-ed.develop.my.salesforce.com/services/authcallback/salesforce_Auth_Provider</callbackUrl>
+        <consumerKey>3MVG9n_HvETGhr3B55Wf7Qu8n9WJGfO0QFV7zmqCjcqv_jofT5Wzr477xRLHCEDoizzXOqdJItEVoyp5DZr2K</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+        <scopes>Eclair</scopes>
+        <scopes>Pardot</scopes>
+        <scopes>Lightning</scopes>
+        <scopes>Content</scopes>
+        <scopes>CDPIngest</scopes>
+        <scopes>CDPProfile</scopes>
+        <scopes>CDPQuery</scopes>
+        <scopes>Chatbot</scopes>
+        <scopes>CDPSegment</scopes>
+        <scopes>CDPIdentityResolution</scopes>
+        <scopes>CDPCalculatedInsight</scopes>
+        <scopes>ForgotPassword</scopes>
+        <scopes>UserRegistration</scopes>
+        <scopes>SFAP</scopes>
+        <scopes>Interaction</scopes>
+        <scopes>CDP</scopes>
+        <scopes>EinsteinGPT</scopes>
+        <scopes>PwdlessLogin</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>arrival_cant_be_less_than_departure</fullName>
+    <active>true</active>
+    <description>arrival date cannot be less than departure date.</description>
+    <errorConditionFormula>Arrival_Date__c  &lt;  Departure_Date__c</errorConditionFormula>
+    <errorDisplayField>Arrival_Date__c</errorDisplayField>
+    <errorMessage>Arrival date can&apos;t be before departure date.</errorMessage>
+</ValidationRule>

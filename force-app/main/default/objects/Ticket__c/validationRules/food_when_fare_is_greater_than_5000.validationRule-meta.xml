@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>food_when_fare_is_greater_than_5000</fullName>
+    <active>false</active>
+    <errorConditionFormula>Ticket_Price__c &gt;5000</errorConditionFormula>
+    <errorDisplayField>Food_Menu__c</errorDisplayField>
+    <errorMessage>Free food on fare greater than 5000</errorMessage>
+</ValidationRule>

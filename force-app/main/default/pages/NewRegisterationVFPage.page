@@ -1,0 +1,13 @@
+<apex:page controller="NewRegisterationcontroller">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection >
+                <apex:inputText label="First Name"/>
+                <apex:inputText label="Last Name"/>
+                <apex:inputText label="Phone"/>
+                <apex:inputText label="Email"/>
+                <apex:commandButton value="Save"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

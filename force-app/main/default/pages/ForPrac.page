@@ -1,0 +1,26 @@
+<apex:page controller="ActConCreateVfCtrl" docType="html-5.0">
+    <div class="Main">
+        <div class="Sub">
+            <div class="left">
+                <apex:form >
+                    <apex:pageBlock >
+                        First Name: <apex:inputField value="{!con.FirstName}"/><br/><br/>
+          				Last Name: <apex:inputField value="{!con.LastName}"/><br/>
+            			Phone: <apex:inputField value="{!con.Phone}"/><br/><br/>
+           				Email: <apex:inputField value="{!con.Email}"/><br/><br/>
+            			<apex:commandButton action="{!saveValues}" value="Save"/>
+                    </apex:pageBlock>
+                </apex:form>
+            </div>
+            
+            <div class="Right">
+                <apex:form >
+                    
+                </apex:form>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</apex:page>

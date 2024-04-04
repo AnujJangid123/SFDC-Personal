@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ticket_price_should_be_less_than_20k</fullName>
+    <active>false</active>
+    <errorConditionFormula>Ticket_Price__c  &gt;= 9999 ||  Ticket_Price__c  &lt;= 740</errorConditionFormula>
+    <errorDisplayField>Ticket_Price__c</errorDisplayField>
+    <errorMessage>Ticket price should be from 750 to 10000</errorMessage>
+</ValidationRule>
