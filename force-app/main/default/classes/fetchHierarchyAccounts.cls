@@ -13,5 +13,5 @@ public class fetchHierarchyAccounts {
         } while (children.size() > 0);
         system.debug('Accounts fetched--->'+allChilds);
         return allChilds;
-    }
+    }//tried deploying the code
 }
